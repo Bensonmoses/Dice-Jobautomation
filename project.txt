@@ -1,0 +1,26 @@
+dice_job_bot/
+│── config/
+│   ├── config.py               # Stores configuration details (Azure, Dice login)
+│   ├── secrets.env             # Environment variables (Azure credentials, Dice credentials)
+│── logs/
+│   ├── app.log                 # Log file for tracking execution
+│── scripts/
+│   ├── dice_login.py           # Handles Dice login authentication
+│   ├── scrape_jobs.py          # Web scraping script (scrapes job listings from Dice)
+│   ├── resume_match.py         # Compares job descriptions with resume
+│   ├── customize_resume.py     # AI-powered resume customization
+│   ├── apply_jobs.py           # Automates job applications
+│── storage/
+│   ├── job_listings.json       # Extracted job listings (backup before Azure upload)
+│   ├── updated_resume.pdf      # AI-customized resume
+│── utils/
+│   ├── azure_storage.py        # Handles Azure Blob Storage operations
+│   ├── selenium_helper.py      # Reusable Selenium functions
+│── tests/
+│   ├── test_scraping.py        # Unit tests for scraping functionality
+│   ├── test_resume_match.py    # Unit tests for resume matching
+│── .gitignore                  # Ignore unnecessary files (logs, venv, .env)
+│── .env                        # Environment variables (Azure credentials, Dice credentials)
+│── requirements.txt            # Dependencies (pip install -r requirements.txt)
+│── README.md                   # Project documentation
+│── main.py                     # Entry point for running the automation pipeline
